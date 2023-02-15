@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+/* color variables */
+:root{
+    --primary: orangered;
+    --light: antiquewhite;
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --heading:  rgb(107, 104, 104);
+}
+.navbar-brand{
+    text-transform: uppercase;
+    font-family: var(--lg-font);
+    font-size: 17px;
+    color: var(--heading);
+}
+
+.navbar-brand:hover{
+    color: var(--primary);
+}
+
+/* navs changes*/
+.nav-item{
+    margin: 0 3px !important;
+}
+.nav-link{
+    font-weight: 600;
+}
+.bg-danger{
+    color: var(--light) !important;
+    background-color: var(--primary)!important;
+}
+.nav-item a:hover{
+    color: antiquewhite !important;
+    background-color: var(--primary) !important;
+}
+
+/*header start*/
+
+.header{
+    padding-top: 104px; 
+    background: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.write-up{
+    text-align: center;
+    text-transform: capitalize;
+    color: antiquewhite;
+    margin-top: 10rem;
+    font-family: var(--sm-font);
+}
+.write-up h4{
+    text-transform: lowercase;
+}
+
+.btn-secondary{
+background-color: var(--primary);
+color: var(--light);
+font-family: var(--sm-font);
+font-size: 1.2rem;
+}
+
+.btn-secondary:hover{
+    background: transparent;
+    color: var(--light);
+}
+.btn-outline-light{
+   border: 1px solid var(--primary);
+}
+.title{
+    color: var(--heading) !important;
+}
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 45px;
+    background-color: var(--primary);
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+
+.card{
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.carousel-inner{
+    padding: 1em;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: var(--primary);
+    width: 6vh;
+    height: 6vh;
+    border-radius:50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control-prev span, .carousel-control-next span{
+    width: 2rem;
+    height: 2rem;
+}
+a.btn.btn-primary{
+    background-color: var(--primary) !important;
+    border: 1px solid var(--primary);
+    font-family: var(--sm-font);
+}
+a.btn.btn-primary:hover{
+    opacity: 0.85;
+}
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.jupar{
+    display: flex;
+    align-items: center;
+}
+.mission{
+    margin: 0 .8em;
+    width: calc(100%/3.2);
+    box-shadow: 2px 5px 10px 5px rgba(22, 22, 26, 0.18);
+    border-radius: .2rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1.5rem;
+}
+.mission h4{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--heading);
+    font-family: var(--lg-font);
+    margin-bottom: 1rem;
+}
+.aim{
+    font-family: var(--sm-font);
+    text-align: center;
+    line-height: 1.8;
+    color: rgb(45, 44, 44);
+    user-select: none;
+    font-size: 16.4px;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.grid-container{
+    display: flex;
+}
+.fade-in-out{
+    flex-basis: 70%;
+    margin: 0 1rem;
+   
+}
+.carousel-item .image{
+    width: 50%;
+    height: 460px;
+    border-radius: 1rem;
+}
+.service-list{
+    height: 460px;
+    margin-top: 1rem;
+    border-radius: .7rem;
+    flex-basis: 20%;
+    box-shadow: 2px 5px 10px 5px rgba(22, 22, 26, 0.18);  
+}
+.service-list p{
+    text-align: left;
+    padding-left: 7px;
+    margin-top: 1.9rem;
+    user-select: none;
+    cursor: pointer;
+    color:rgb(53, 51, 51);
+    font-family: var(--sm-font);
+    font-size: .9rem;
+}
+
+.service-list p:hover{
+    color: var(--primary);
+}
+.aside-div{
+    flex-basis: 25%;
+    height: 450px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+.up-div{
+    margin-bottom: 1rem;
+    background: url('../img/162043899610aa35f6b22ac5b61eebe8415cbfa353.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 0;
+}
+.up-div::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    border-radius: 1rem;
+}
+.duplex{
+    position: absolute;
+    text-align: center;
+    top: 5rem;
+}
+.duplex h5{
+    color: white;
+    font-family: var(--sm-font);
+    font-size: 1.1rem;
+    user-select: none;
+}
+.down-div{
+    background: url('../img/apartment-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 0;
+}
+.down-div::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    border-radius: 1rem;
+}
+.send{
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.send:hover{
+    background-color: var(--primary);
+    opacity: 0.85;
+}
+
+.footer{
+    background-color: rgb(93, 90, 90);
+    height: 65vh;
+}
+.footer-content{
+    padding-top: 3.5rem;
+    display: flex;
+    color: white;
+    margin-bottom: 2rem;
+}
+.jupar-logo{
+    margin-right: 8rem;
+}
+.J-abode{
+    width: 18rem;
+    line-height: 2;
+    font-size: 1rem;
+}
+.jupar-logo a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+.jupar-logo a:hover{
+    color: wheat;
+    opacity: 0.9;
+}
+.all-company{
+    display: flex;
+}
+.company{
+    margin-right: 5.5rem;
+}
+.company h5{
+    margin-bottom: 2rem;
+}
+.company p{
+    padding-bottom: 1rem;
+}
+.company p a{
+    text-decoration: none;
+    color: white;
+}
+.company p a:hover{
+    color: var(--primary);
+    cursor: pointer;
+}
+.company i{
+    padding-right: 5px;
+}
+.icons i{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+.icons i.fa-instagram:hover{
+    color: orangered; 
+}
+.icons i.fa-twitter:hover{
+    color: #00acee;
+}
+.icons i.fa-linkedin:hover{
+    color: #0077b5;
+}
+.icons i.fa-facebook-square:hover{
+    color: #0077b5;
+}
+.footer-bottom{
+    position: relative;
+}
+.hr{
+    border-top: 1px groove white;
+    width: 69rem; 
+}
+.copyright{
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+}
+.footer-bottom span{
+    position: absolute;
+    right: .1rem;
+    bottom: -1rem;
+    background-color: var(--primary);
+    border-radius: 1px;
+}
+.fa-angle-up{
+    padding: 1rem;
+    font-size: .9rem;
+    color: var(--light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for larger screens that is greater than or equal to 577*/
+@media screen and (min-width:577px){
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    margin: 0 0.5em;
+    width: calc(100%/3);
+}
+.image-wrapper{
+    height: 22vw;
+}
+}
+/* Less than or equal to 576 */
+@media screen and (max-width:576px) {
+    .card:not(:first-child){
+        display: none;
+    }
+    .jupar{
+        flex-direction: column;
+    }
+    .mission{
+        width: calc(80%/1);
+        margin-bottom: 2rem;
+    }
+    .grid-container{
+      flex-direction: column-reverse;
+    }
+    .aside-div, .service-list{
+        display: none;
+    }
+    .carousel-item .image{
+         height: 360px;   
+    }
+   .footer{
+        height: 102vh;
+    }
+    .footer-content{
+        flex-direction: column;
+        padding-top: 1rem; 
+        padding-left: .5rem;
+    }
+    .all-company{
+        margin-top: 1rem;
+        
+    }
+    .company{
+        margin-right: 2.5rem;
+        font-size: .8rem;
+    }
+    .company h5{
+        font-size: 1rem;
+    }
+    .company p{
+        padding-bottom: unset;
+    }
+    .hr{
+        width: 30rem;
+    }
+    .footer-bottom span{
+        right: .7rem;
+    }
+    
+    
+}
+
+
